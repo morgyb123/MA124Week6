@@ -1,0 +1,49 @@
+\documentclass[12pt]{article}
+
+\usepackage{listings}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{amssymb}
+
+\lstset{language=Matlab}
+
+\title{Maths by Computer - Week 6}
+\author{William Dyson (1408252) \& John Morgan Blake (1402265)}
+\date{\today}
+\begin{document}
+\maketitle
+
+\section{Q6A: Lucky Streaks}
+In this section, we aim to use computational methods in order to find a solution to the following problem: 
+\begin{quote}
+Toss a fair coin a large number $N$ times and find the longest streak of successive heads. So if the outcomes are HHTHTTHTHHHHTTHHHTH then the streak length is 4.
+\end{quote}
+\subsection{Program to Simulate Coin Tosses}
+
+	\subsubsection{Plot Histogram of Data plus m-file}
+		%formulation of problem to be tackled
+	\subsubsection{Histogram of Data}
+	\subsubsection{m-file}
+	\subsubsection{Comment on appearance of distribution of longest run}
+
+\subsection{Probabilities of streak of at least a fixed length in fixed number of tosses}
+%brief discussion of appropriate results stated in assignment sheet.
+	\subsubsection{Compare upper bound with various k-values and in data. Comment on accuracy of upper bound}
+	\subsubsection{Matlab Plot and comparison with upper bound}
+Let $A$ be the event there is a streak of length $k$ or more in the first $N$ tosses. Then, $A=\bigcup _{n=1} ^N {A_n}$, where $A_n$ represents the event that a streak of length $k$ starts at toss number $n$. Since $P[A_k]=(\frac{1}{2})^k$, we have the upper bound $P[A] \leq N(\frac{1}{2})^k$.
+\\
+We now compare the accuracy of this upper bound, for various values of k, with our data.
+
+
+\section{Q6B: Card Collecting}
+%intro to and formulation of problem
+
+
+\subsection{m-file to perform given experiment}
+	\subsubsection{m-file for extended experiment}
+	\subsubsection{Record of collection times and histogram}
+
+\subsection{Method of calculating $E[T]$}
+	\subsubsection{Formula for each $E[T_k]$ and sum}
+\end{document}
+
